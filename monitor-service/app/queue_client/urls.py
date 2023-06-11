@@ -4,5 +4,6 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('queue_connection/', views.QueueConnectionList.as_view()),
-    path('queue_connection/<int:pk>/', views.QueueConnectionDetail.as_view())
+    path('queue_connection/<int:pk>/', views.QueueConnectionDetail.as_view()),
+    path('queue_connection/check', views.CheckQueueConnection.as_view())
 ]
